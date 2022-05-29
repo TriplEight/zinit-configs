@@ -11,6 +11,7 @@ jobs:
   test_zshrc_config:
     strategy:
       matrix:
+        fail-fast: false
         author: [vladdoster, numToStr]
     runs-on: ubuntu-latest
     steps:
