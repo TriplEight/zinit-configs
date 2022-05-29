@@ -17,9 +17,9 @@ jobs:
       - name: Checkout sources
         uses: actions/checkout@v3
 
-      - name: Test ${{ matrix.version }}'s config
+      - name: Test ${{ matrix.author }}'s config
         run: |
           docker build \
-            --build-arg FOLDER="${{ matrix.version }}" \
+            --build-arg FOLDER="${{ matrix.author }}" \
             --build-arg TERM="${TERM}" \
-            -t "zplg-configs:${{ matrix.version }}" .
+            -t "zplg-configs:${{ matrix.author }}" .
