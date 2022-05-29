@@ -30,7 +30,7 @@ jobs:
           docker build \
             --build-arg FOLDER="vladdoster" \
             --build-arg TERM="${TERM}" \
-            -t "zplg-configs:vladdoster .
+            -t "zplg-configs:vladdoster" .
       - name: Move cache
         run: |
           rm -rf /tmp/.buildx-cache
