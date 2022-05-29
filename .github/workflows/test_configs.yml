@@ -35,8 +35,6 @@ jobs:
           build-args: |
             FOLDER="vladdoster"
             TERM="${TERM}"
-          cache-from: type=local,src=/tmp/.buildx-cache
-          cache-to: type=local,dest=/tmp/.buildx-cache-new
 
       - name: Move cache
         run: |
