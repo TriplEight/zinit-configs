@@ -1,4 +1,4 @@
-name: Test vladdoster config
+name: Test configs
 
 on:
   push:
