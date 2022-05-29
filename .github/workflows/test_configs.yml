@@ -6,6 +6,7 @@ on:
       - .github/workflows/test_configs.yml
       - Dockerfile
       - vladdoster/.zshrc
+      - numToStr/zshrc.zsh
 
 jobs:
   test_zshrc_config:
