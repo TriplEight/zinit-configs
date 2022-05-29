@@ -23,8 +23,7 @@ RUN adduser --disabled-password --gecos '' user         && \
 USER user
 
 # Install zinit
-RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)" && \
-    pwd && ls
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 
 # Copy configs into home directory
 ARG FOLDER
